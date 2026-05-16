@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/gallery/1.jpg",
+  "/gallery/1.png",
   "/gallery/2.jpg",
   "/gallery/3.jpg",
   "/gallery/4.jpg",
