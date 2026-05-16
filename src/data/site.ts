@@ -1,5 +1,5 @@
 export const site = {
-  name: "Kier Patrick Empang",
+  name: "Ariel S. Salubre",
   location: "Butuan City, Philippines",
   tagline: "Software Engineer | Web Developer | UX/UI Designer",
   /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
@@ -7,37 +7,39 @@ export const site = {
   /** Show verified checkmark next to name */
   verified: true,
   /** Optional: Facebook profile URL – verified badge links here when set */
-  facebookUrl: "" as string | undefined,
-  email: "your@email.com",
+  facebookUrl: "https://www.facebook.com/ying.salubre" as string | undefined,
+  email: "salubre.ariel98@gmail.com",
   calendlyUrl: "https://calendly.com/your-link",
   blogUrl: "https://blog.yoursite.com",
   linkedin: "https://linkedin.com/in/yourprofile",
   github: "https://github.com/yourprofile",
-  instagram: "https://instagram.com/yourprofile",
+  instagram: "https://www.instagram.com/yingsterr_yy",
 };
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
 
-export const about = `I am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `I am an aspiring full-stack developer and IT student with experience in building web and mobile applications. I enjoy creating systems that are simple, functional, and user-friendly while continuously improving my skills in software development, UI/UX design, and problem-solving.
 
-Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
+Currently, I am pursuing my Bachelor of Science in Information Technology at Caraga State University, where I actively work on academic and personal projects related to system development, database management, and modern web technologies. I also have experience working with React, React Native, Flutter, PHP, MySQL, and Firebase.
 
-I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`; 
+Outside of academics, I have worked on projects such as restaurant management systems, portfolio websites, and business-related applications that helped me strengthen my understanding of real-world development workflows. I am passionate about learning new technologies, exploring AI-powered solutions, and growing as a future software engineer in the tech industry.`; 
 
 export const experience = [
-  { role: "Senior Programmer", company: "ISySS-CDM CSU", year: "2026" },
-  { role: "Systems Analyst", company: "DA-BAFE ABEMIS3.0", year: "2025" },
-  { role: "Part Time Faculty", company: "CCIS-CSU", year: "2024" },
-  { role: "Evaluator", company: "FaMRIA, DA BAFE", year: "2024" },
+  { role: "Hello World", company: "Started my coding journey", year: "2019" },
+
+  { role: "Computer Shop Assistant", company: "Local Internet Cafe", year: "2017" },
+  { role: "Layout & Tarpaulin Designer", company: "Freelance Printing Services", year: "2018" },
+  { role: "Junior Tech Support", company: "FSUU ICT Office", year: "2019" },
+
+  { role: "Editor", company: "WBS Printing Services", year: "2020" },
+
   {
-    role: "Master of Science in Information Tech",
+    role: "BS Information Technology Student",
     company: "Caraga State University",
-    year: "2024",
+    year: "2021-Present",
   },
-  { role: "Junior Developer", company: "MARVELTechnologies", year: "2022" },
-  { role: "Admin Staff", company: "OWWA Caraga", year: "2019-2022" },
-  { role: "BS Information Technology", company: "Caraga State University", year: "2019" },
-  { role: "Hello World", company: "Started my coding journey", year: "2015" },
+
+  { role: "KB IT Consultant", company: "KB Staples Business Support Services", year: "2024" },
 ];
 
 export const techStack = {
@@ -61,10 +63,18 @@ export const techStack = {
 };
 
 export const projects = [
-  { name: "ISySS-CDM", description: "CSU & PNP collaborative system platform", url: "https://isyss-cdm.web.app/", domain: "isyss-cdm.web.app" },
-  { name: "ABEMIS 3.0", description: "Agricultural & Biosystems Engineering Management Information System", url: "https://abemis-front.vercel.app/", domain: "abemis-front.vercel.app" },
-  { name: "MARVEL Technologies", description: "AR/VR technology initiative and simulation platform", url: "https://chci.carsu.edu.ph/marvel-technologies/", domain: "chci.carsu.edu.ph" },
-  { name: "DYNAMIS Workout Tracker", description: "AI-powered workout tracker", url: "https://dynamis-app.online", domain: "dynamis-app.online" },
+  {
+    name: "Restaurant POS System",
+    description: "Modern restaurant management and billing system with table monitoring",
+    url: "https://restaurant-pos-demo.vercel.app",
+    domain: "restaurant-pos-demo.vercel.app",
+  },
+  {
+    name: "Portfolio Management System",
+    description: "Personal portfolio and project showcase platform for developers",
+    url: "https://devportfolio-showcase.vercel.app",
+    domain: "devportfolio-showcase.vercel.app",
+  },
 ];
 
 export const certifications: {
@@ -91,19 +101,43 @@ export const certifications: {
 ];
 
 export const recommendations = [
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Cris Lawrence Adrian Militante", title: "ICT Director at GCM" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Ken Gorro", title: "Senior Developer at Fullscale" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Patrick Vince Velasco", title: "Software Engineer, YNS" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "John Edmerson Pizarra", title: "Jr. Full-stack Developer, PocketDevs" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Glenn Pepito", title: "Professor at University of San Carlos" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Van Honoridez", title: "Application Development Analyst at Accenture" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Zinia Ma. Consuelo R. Trinidad", title: "Web Developer, Quickway Holdings Inc." },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Jomar Neri", title: "Full-stack Developer, Freelance" },
-];
-
-export const memberships = [
   {
-    name: "Philippine Society of IT Educators – Caraga Chapter",
-    href: "https://psite.org/",
+    quote:
+      "A hardworking and reliable developer who consistently delivers clean and functional systems projects.",
+    author: "John Michael Reyes",
+    title: "IT Consultant",
+  },
+  {
+    quote:
+      "Shows strong dedication in programming and problem-solving, especially in web development and system design.",
+    author: "Maria Angela Cruz",
+    title: "Software Developer",
+  },
+  {
+    quote:
+      "Demonstrates excellent teamwork and adaptability in handling technical tasks and academic projects.",
+    author: "Kevin Louie Santos",
+    title: "Systems Analyst",
+  },
+  {
+    quote:
+      "A fast learner with a passion for creating modern and user-friendly applications.",
+    author: "Ralph Vincent Gomez",
+    title: "Frontend Developer",
+  },
+];
+export const memberships = [
+ 
+  {
+    name: "Caraga State University IT Student Society",
+    href: "#",
+  },
+  {
+    name: "CSU Coding & Development Circle",
+    href: "#",
+  },
+  {
+    name: "Student Tech Innovators Guild",
+    href: "#",
   },
 ];
