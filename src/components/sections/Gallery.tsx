@@ -1,17 +1,35 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const PLACEHOLDER_COUNT = 15;
+const images = [
+  "/gallery/1.jpg",
+  "/gallery/2.jpg",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
+  "/gallery/5.jpg",
+  "/gallery/6.jpg",
+  "/gallery/7.jpg",
+  "/gallery/8.jpg",
+  "/gallery/9.jpg",
+  "/gallery/10.jpg",
+  "/gallery/11.jpg",
+  "/gallery/12.jpg",
+  "/gallery/13.jpg",
+  "/gallery/14.jpg",
+  "/gallery/15.jpg",
+];
 
 export function Gallery() {
   const [startIndex, setStartIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const visibleCount = 5;
-  const maxStart = Math.max(0, PLACEHOLDER_COUNT - visibleCount);
+  const maxStart = Math.max(0, images.length - visibleCount);
 
   function prev() {
     setStartIndex((i) => (i <= 0 ? maxStart : i - 1));
@@ -27,7 +45,9 @@ export function Gallery() {
         <h2 className="mb-4 text-base font-semibold tracking-tight md:text-lg">
           Gallery
         </h2>
+
         <div className="flex items-center gap-2">
+          {/* LEFT BUTTON */}
           <button
             type="button"
             onClick={prev}
@@ -36,9 +56,14 @@ export function Gallery() {
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
+
+          {/* GALLERY GRID */}
           <div className="grid flex-1 grid-cols-5 gap-2">
             {Array.from({ length: visibleCount }, (_, offset) => {
               const i = startIndex + offset;
+
+              if (!images[i]) return null;
+
               return (
                 <Card
                   key={i}
@@ -46,15 +71,23 @@ export function Gallery() {
                     "aspect-square cursor-pointer overflow-hidden transition hover:ring-2 hover:ring-primary",
                     activeIndex === i && "ring-2 ring-primary"
                   )}
-                  onClick={() => setActiveIndex(activeIndex === i ? null : i)}
+                  onClick={() =>
+                    setActiveIndex(activeIndex === i ? null : i)
+                  }
                 >
-                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground">
-                    <span className="text-xs font-medium">{i + 1}</span>
-                  </div>
+                  <Image
+                    src={images[i]}
+                    alt={`Gallery image ${i + 1}`}
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
                 </Card>
               );
             })}
           </div>
+
+          {/* RIGHT BUTTON */}
           <button
             type="button"
             onClick={next}
